@@ -4,7 +4,6 @@ describe('template spec', () => {
     cy.contains('test123').should('be.visible')
 
     const headerNames = ['Test2', 'Test3']
-  
     headerNames.forEach((headerName) => {
       checkForm(headerName)
     })
