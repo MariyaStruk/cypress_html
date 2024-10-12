@@ -3,7 +3,7 @@ describe('template spec', () => {
     cy.visit('/src/index.html')
   })
 
-  it('passes', () => {
+  it.only('should have correct block headers', () => {
     cy.contains('test123').should('be.visible')
 
     const headerNames = ['Test2', 'Test3']
