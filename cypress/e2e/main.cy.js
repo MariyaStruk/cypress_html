@@ -1,6 +1,9 @@
 describe('template spec', () => {
-  it('passes', () => {
+  beforeEach(() => {
     cy.visit('/src/index.html')
+  })
+
+  it('passes', () => {
     cy.contains('test123').should('be.visible')
 
     const headerNames = ['Test2', 'Test3']
