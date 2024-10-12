@@ -18,5 +18,4 @@ describe('template spec', () => {
       cy.get("[type='checkbox']").click().click()
     })
   }
-
 })
